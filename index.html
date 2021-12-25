@@ -1,3 +1,8 @@
+---
+
+---
+<!DOCTYPE html>
+<html>
 <head>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -17,19 +22,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="{% url "home"%}">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url "research"%}">Research</a>
+          <a class="nav-link" href="research.html">Research</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href={% url "projects"%}>Projects</a>
+          <a class="nav-link" href="projects.html">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href={% url "hobbies"%}>Hobbies</a>
+          <a class="nav-link" href="hobbies.html">Hobbies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href={% url "cv"%}>CV</a>      
+          <a class="nav-link" href="cv.html">CV</a>      
         </li>
       </ul>
     </div>
@@ -57,10 +62,12 @@
       <p class="lead">
       Hi, I am Gerson Kroiz, a senior majoring in math and computer science at the University of Maryland, Baltimore County. 
       My research interests include machine learning, high performance computing, and numerical linear algebra with applications in finance.
+      In my spare time, I enjoy traveling, playing soccer, running, biking, skiing, and taking pictures.
       
       </p>
     </div>
   </div>
   
-  {% include 'parts/footer.html' %}
-  
+  {% comment %} {% include footer.html %} {% endcomment %}
+
+  </html>
