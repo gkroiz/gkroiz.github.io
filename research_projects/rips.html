@@ -1,0 +1,96 @@
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    
+    <style>
+    div.a {
+      text-align: center;
+    }
+    
+    div.b {
+      text-align: left;
+    }
+    
+    div.c {
+      text-align: right;
+    } 
+    
+    div.d {
+      text-align: justify;
+    } 
+    </style>
+    <style> 
+        body {
+          background-color: #303030;
+        }
+    </style>
+    
+    <!DOCTYPE html>
+    
+    <!-- imports header material-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1" href="#">Gerson Cheon Kroiz</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../research.html">Research <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../hobbies.html">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cv.html">CV</a>      
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+</br>
+</br>
+
+    <div class="container">
+    <div class="card text-center">
+      <div class="card-body">
+        <h2 class="card-title">Memory-Bound Elastic Net Over Dense Matrices with Applications in Quantitative Trading
+        </h2>
+        <h5>
+        <b> Authors: </b> Ben Young (Case Western Reserve University), Atanas Dinev (Princeton University),<br> Jacob Feitelberg (Johns Hopkins University), Gerson C. Kroiz (UMBC)
+        </h5>
+        <br>
+    
+        <div class="d">
+        <p class="card-text" text-align="justify"><b> Work Summary: </b> Quantitative analysis of U.S equity trading frequently involves processing large datasets whose predictive features often have very weak correlations with their target variables. One common method for regression analysis in quantitative trading is elastic net, a regularized form of least squares estimation. This project aims to solve elastic net using limited amounts of computational power. To overcome memory limitations when processing arbitrarily large data, we implement matrix batching methods whereby correlations between features are calculated per batch and combined into an overall result. Similarly, we introduce MiniCD, a general framework to estimate coefficients across subsets of samples and combine them into a prediction for the whole input. We compare several methods of ensembling estimated batch coefficients. We also explore several strategies to speed up Coordinate Descent. We compare cyclic, random, greedy, and adaptive methods for choosing update axes. We explore computationally cheap ways to determine convergence and several applications of a warm start. We study the effect on runtime of reducing iterations to convergence via data preconditioning. Our improvements achieve significant speedups relative to and can process larger datasets than out-of-the-box elastic net solvers such as Python’s Sci-Kit Learn.
+        </p>
+        <p>
+          <b> Tools Used: </b> C++, Python, LaTeX, OpenMP, Pytorch
+        </p>
+        <p>
+        </p>
+      </div>
+      <p><b> Final Report </b></p>
+        <embed src="../static/pdfs/AquaticFinalReportRIPS2020.pdf" width="800px" height="1000x" />
+    
+    
+        <br>
+    
+    
+    
+    
+        <br>
+        <a href="../research.html" class="btn btn-primary">Other Research</a>
+      </div>
+    </div>
+    </div>
