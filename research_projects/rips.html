@@ -1,3 +1,7 @@
+---
+---
+<!DOCTYPE html>
+<html>
 <head>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -22,18 +26,12 @@
       text-align: justify;
     } 
     </style>
-    <style> 
-        body {
-          background-color: #303030;
-        }
-    </style>
     
-    <!DOCTYPE html>
     
     <!-- imports header material-->
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <span class="navbar-brand mb-0 h1" href="#">Gerson Cheon Kroiz</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-brand mb-1 h1" href="#">Gerson Cheon Kroiz</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,11 +44,11 @@
             <a class="nav-link" href="../research.html">Research <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../projects.html">Projects</a>
+            <a class="nav-link" href="../projects.html">Selected Projects</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../hobbies.html">Hobbies</a>
-          </li>
+          {% comment %} <li class="nav-item"> {% endcomment %}
+            {% comment %} <a class="nav-link" href="../hobbies.html">Hobbies</a> {% endcomment %}
+          {% comment %} </li> {% endcomment %}
           <li class="nav-item">
             <a class="nav-link" href="../cv.html">CV</a>      
           </li>
@@ -58,9 +56,10 @@
       </div>
     </nav>
     
-</br>
-</br>
 
+<div style="background-image: url('../static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat;">
+</br>
+</br>
     <div class="container">
     <div class="card text-center">
       <div class="card-body">
@@ -81,7 +80,7 @@
         </p>
       </div>
       <p><b> Final Report </b></p>
-        <embed src="../static/pdfs/AquaticFinalReportRIPS2020.pdf" width="800px" height="1000x" />
+        <embed src="../static/pdfs/AquaticFinalReportRIPS2020.pdf" width="800px" height="1100x" />
     
     
         <br>
@@ -90,7 +89,20 @@
     
     
         <br>
-        <a href="../research.html" class="btn btn-primary">Other Research</a>
-      </div>
+        <a href="../research.html" class="btn btn-outline-dark btn-lg">Other Research</a>
     </div>
     </div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+</div>
+{% include footer.html %}
+</div>
+</html>

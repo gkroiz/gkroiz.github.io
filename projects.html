@@ -1,16 +1,18 @@
+---
+---
+<!DOCTYPE html>
+<html>
 <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
-    
-    <!DOCTYPE html>
-    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
     <!-- imports header material-->
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1" href="#">Gerson Cheon Kroiz</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <span class="navbar-brand mb-1 h1" href="#">Gerson Cheon Kroiz</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,34 +25,94 @@
               <a class="nav-link" href="research.html">Research</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="projects.html">Selected Projects <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hobbies.html">Hobbies</a>
-            </li>
+            {% comment %} <li class="nav-item"> {% endcomment %}
+              {% comment %} <a class="nav-link" href="hobbies.html">Hobbies</a> {% endcomment %}
+            {% comment %} </li> {% endcomment %}
             <li class="nav-item">
               <a class="nav-link" href="cv.html">CV</a>      
             </li>
           </ul>
         </div>
       </nav>
-    
+
+
+<div style="background-image: url('static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat;">
+  </br>
+  </br>
+
+  <div class="container">
     <div class="jumbotron">
-      <h1 class="display-4">Deep Learning for Proton Radiotherapy</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm">
+              <h1 class="display-5">Personal Website</h1>
+              <p class="lead">December 2021</p>
+              <p> I created a basic personal website. The website was developed using HTML, CSS, Bootstrap, and Jekyll hosted via Github.</p>
+              <a class="btn btn-outline-dark" href="https://github.com/gkroiz/gersonckroiz.github.io" role="button">Source Code</a>
+            </div>
+            <div class="col-sm">
+              <img src="../static/images/website_ss.png" style="object-fit:contain;" width="600px" height="300px"/>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <div class="container">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h1 class="display-5">UMBC Syllabus Synthesizer</h1>
+            <p class="lead">October 2021-December 2021</p>
+            <p> This is a syllabus builder web-based application aimed to universalize, simplify, and reduce any redundancies in the syllabus creation process. This project was part of my Software Engineering Course (CMSC 447) and developed by Gerson Kroiz, Sam Bailor, Koby Samuel, Eddie Nieberding, and Deep Mistry. This project used Django, Python, HTML, CSS, and Boostrap.</p>
+            <a class="btn btn-outline-dark" href="https://github.com/gkroiz/syllabus-project" role="button">Source Code</a>
+          </div>
+          <div class="col-sm">
+            <iframe width="480px" height="330px" src="https://www.youtube.com/embed/4--0K2Lj3Uc"> </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm">
+            <h1 class="display-5">SMC Data Challenge</h1>
+            <p class="lead">June 2021-August 2021</p>
+            <p>Sander Schulhoff, Joshua Anantharaj, Nickolas Drake, and I designed a U-Net deep learning architecture for the data challenge sponsored by General Motors. We declined to present at their conference due to poor results based on industry standard. However, the project was good deep learning practice. This project utilized Python, Pytorch, Slurm, and LaTeX. </p>
+            <a class="btn btn-outline-dark" href="https://github.com/trigaten/smc-data-challenge" role="button">Source Code</a>
+          </div>
+          <div class="col-sm">
+            <embed src="../static/pdfs/smc_report.pdf" type="application/pdf" width="600px" height="400px" />
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    {% comment %} <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-5">
+       Hackathon Bitcamp</h1>
+      <p class="lead">April 2019</p>
       <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p>Key Words: Elastic Net, Coordinate Descent, Stochastic Gradient Descent, Ensembling methods, Memory-Bound Optimization</p>
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
       </p>
     </div>
-    
-    <div class="jumbotron">
-      <h1 class="display-4">Deep Learning for Proton Radiotherapy</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </p>
-    </div>
+    </div> {% endcomment %}
+</br>
+</br>
+</div>
+
+  {% include footer.html %}
+</html>

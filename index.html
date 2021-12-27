@@ -7,14 +7,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  </head>
-  
-  <!DOCTYPE html>
+</head>
   
   <!-- imports header material-->
   
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1" href="#">Gerson Cheon Kroiz</span>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand mb-1 h1" href="#">Gerson Cheon Kroiz</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,11 +25,11 @@
           <a class="nav-link" href="research.html">Research</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="projects.html">Selected Projects</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="hobbies.html">Hobbies</a>
-        </li>
+        {% comment %} <li class="nav-item"> {% endcomment %}
+          {% comment %} <a class="nav-link" href="hobbies.html">Hobbies</a> {% endcomment %}
+        {% comment %} </li> {% endcomment %}
         <li class="nav-item">
           <a class="nav-link" href="cv.html">CV</a>      
         </li>
@@ -40,34 +38,29 @@
   </nav>
   
   
-  <head>
-  <style> 
-  body {
-    background-color: #303030;
-  }
-  </style>
-  </head>
-  
+  <div style="background-image: url('static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat;">
   <div class="container">
   ​<picture>
-    {% comment %} <source srcset="static/images/GK_Headshot.jpg" type="image/svg+xml"> {% endcomment %}
-  <img src="static/images/GK_Headshot.jpg" class="rounded-circle mx-auto d-block" alt="..." height = '300px'>
+  <img src="static/images/GK_Headshot.jpg" class="rounded-circle mx-auto d-block" alt="..." height = '500px'>
   </picture>
   <br>
-  {% comment %} <br> {% endcomment %}
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron">
     <div class="container">
       <h1 class="display-4">About Me</h1>
       <p class="lead">
       Hi, I am Gerson Kroiz, a senior majoring in math and computer science at the University of Maryland, Baltimore County. 
       My research interests include machine learning, high performance computing, and numerical linear algebra with applications in finance.
-      In my spare time, I enjoy traveling, playing soccer, running, biking, skiing, and taking pictures.
+      In my spare time, I enjoy traveling, playing piano, running, biking, skiing, and taking pictures.
       
       </p>
     </div>
   </div>
 </div>
-  
-  {% comment %} {% include footer.html %} {% endcomment %}
+</br>
+</br>
+</br>
+</br>
+</div>
+  {% include footer.html %}
 
   </html>

@@ -1,17 +1,18 @@
+---
+---
+<!DOCTYPE html>
+<html>
 <head>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-    <!DOCTYPE html>
-    
     <!-- imports header material-->
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1" href="#">Gerson Cheon Kroiz</span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-brand mb-1 h1" href="#">Gerson Cheon Kroiz</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,96 +25,100 @@
               <a class="nav-link" href="research.html">Research <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
+              <a class="nav-link" href="projects.html">Selected Projects</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hobbies.html">Hobbies</a>
-            </li>
+            {% comment %} <li class="nav-item"> {% endcomment %}
+              {% comment %} <a class="nav-link" href="hobbies.html">Hobbies</a> {% endcomment %}
+            {% comment %} </li> {% endcomment %}
             <li class="nav-item">
               <a class="nav-link" href="cv.html">CV</a>      
             </li>
           </ul>
         </div>
       </nav>
-
+<div style="background-image: url('static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat;">
 </br>
 </br>
-    <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-5">Deep Learning Baseline for Spatiotemporal Precipitation Predictions</h1>
-      <p class="lead">June 2021-August 2021</p>
-      <hr class="my-4">
-      <p>Keywords: Deep Learning, High Performance Computing, Weather Nowcasting</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="research_projects/suli.html" role="button">Learn more</a>
-      </p>
-    </div>
-    </div>
-    <div class="container">
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
         <div class="jumbotron">
-          <h1 class="display-5">Deep Learning to Enhance Compton Camera Based Prompt Gamma Image Reconstruction Data for Proton Radiotherapy</h1>
-          <p class="lead">December 2019-August 2021</p>
-          <hr class="my-4">
-          <p>Keywords: Deep Learning, High Performance Computing, Proton Radiotherapy, Compton Camera</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="research_projects/proton.html" role="button">Learn more</a>
-          </p>
+            <h1 class="display-5">Deep Learning Baseline and Benchmark for Spatiotemporal Precipitation Predictions</h1>
+            <p class="lead">June 2021-August 2021</p>
+            <hr class="my-4">
+            <p>Keywords: Deep Learning, High Performance Computing, Weather Nowcasting</p>
+            <p class="lead">
+            <a class="btn btn-outline-dark btn-lg" href="research_projects/suli.html" role="button">Learn more</a>
+            </p>
+        </div>  
+        </div>
+        <div class="col">
+        <div class="jumbotron">
+            <h1 class="display-5">Deep Learning to Enhance Compton Camera Image Reconstruction Data for Proton Radiotherapy</h1>
+            <p class="lead">December 2019-August 2021</p>
+            <hr class="my-4">
+            <p>Keywords: Deep Learning, High Performance Computing, Proton Radiotherapy, Compton Camera</p>
+            <p class="lead">
+            <a class="btn btn-outline-dark btn-lg" href="research_projects/proton.html" role="button">Learn more</a>
+            </p>
         </div>
         </div>
-
-    <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-5">
-        Memory-Bound Elastic Net Over Dense Matrices with Applications in Quantitative Trading</h1>
-      <p class="lead">June 2020-August 2020</p>
-      <hr class="my-4">
-      <p>Key Words: Elastic Net, Coordinate Descent, Stochastic Gradient Descent, Ensembling methods, Memory-Bound Optimization</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="research_projects/rips.html" role="button">Learn more</a>
-      </p>
-    </div>
-    </div>
-    <div class="container">
-    <div class="jumbotron">
-        <h1 class="display-5">Stochastic Precipitation Generation for the Potomac River Basin using Hidden Markov Models</h1>
-        <p class="lead">January 2020-June 2020</p>
-        <p>Key Words: Spatiotemporal modeling, Hidden Markov models, Precipitation generation, Stochastic simulations</p>
-        <hr class="my-4">
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="research_projects/cybertraining.html" role="button">Learn more</a>
-        </p>
-      </div>
-      </div>
-
-    <div class="container">
-    <div class="jumbotron">
-        <h1 class="display-5">Study of Exploiting Coarse-Grained Parallelism in Block-Oriented
+    <div class="w-100"></div>
+        <div class="col">
+        <div class="jumbotron">
+            <h1 class="display-5">
+            Memory-Bound Elastic Net Over Dense Matrices with Applications in Quantitative Trading</h1>
+            <p class="lead">June 2020-August 2020</p>
+            <hr class="my-4">
+            <p>Key Words: Elastic Net, Coordinate Descent, Stochastic Gradient Descent, Ensembling methods, Memory-Bound Optimization</p>
+            <p class="lead">
+            <a class="btn btn-outline-dark btn-lg" href="research_projects/rips.html" role="button">Learn more</a>
+            </p>
+        </div>
+        </div>
+        <div class="col">
+        <div class="jumbotron">
+            <h1 class="display-5">Stochastic Precipitation Generation for the Potomac River Basin using Hidden Markov Models</h1>
+            <p class="lead">January 2020-June 2020</p>
+            <hr class="my-4">
+            
+            <p>Key Words: Spatiotemporal modeling, Hidden Markov models, Precipitation generation, Stochastic simulations</p>
+            <p class="lead">
+            <a class="btn btn-outline-dark btn-lg" href="research_projects/cybertraining.html" role="button">Learn more</a>
+            </p>
+          </div>
+        </div>
+    <div class="w-100"></div>
+        <div class="col">
+        <div class="jumbotron">
+            <h1 class="display-5">Study of Exploiting Coarse-Grained Parallelism in
             Numerical Linear Algebra Routines</h1>
-        <p class="lead">May 2019-August 2019</p>
-        <hr class="my-4">
-        <p>Key Words: Numerical Linear Algebra, LU Decomposition, Matrix Multiplication, Data Streaming</p>
-        <p class="lead">
-        <a class="btn btn-primary btn-lg" href="research_projects/nist.html" role="button">Learn more</a>
-        </p>
-    </div>
+            <p class="lead">May 2019-August 2019</p>
+            <hr class="my-4">
+            <p>Key Words: Numerical Linear Algebra, LU Decomposition, Matrix Multiplication, Data Streaming</p>
+            <p class="lead">
+            <a class="btn btn-outline-dark btn-lg" href="research_projects/nist.html" role="button">Learn more</a>
+            </p>
+            </div>
+        </div>
+        <div class="col">
+        <div class="jumbotron">
+            <h1 class="display-5">Linkages of Calcium Induced Calcium Release Simulated by Seven Partial Differential Equations</h1>
+            <p class="lead">December 2018-May 2019</p>
+            <hr class="my-4">
+            <p>Key Words: Cardiac Arrhythmia, Reaction Diffusion Equations, Finite Volume Method, Parallel Computing</p>
+            <p class="lead">
+            <a class="btn btn-outline-dark btn-lg" href="research_projects/cardiac.html" role="button">Learn more</a>
+            </p>
+            </div>
+        </div>
+      </div>
 
-    </div>
-    <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-5">Linkages of Calcium Induced Calcium Release in a Cardiomyocyte Simulated by a System of Seven Coupled Partial Differential Equations</h1>
-        <p class="lead">December 2018-May 2019</p>
-        <hr class="my-4">
-        <p>Key Words: Cardiac Arrhythmia, Calcium Induced Calcium Release, Reaction Diffusion Equations, Finite Volume Method, Parallel Computing</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="research_projects/cardiac.html" role="button">Learn more</a>
-        </p>
-      </div>
-      </div>
-      <style> 
-        body {
-          background-color: #303030;
-        }
-        div {
-            background-image: url('static/banner.jpeg');
-        }
-      </style> 
+  
+  </br>
+  </br>
+</div>
+</div>
+
+  {% include footer.html %}
+</html>
