@@ -56,7 +56,13 @@
             </br>
             </div>
             <div class="col-sm">
-              <img src="../static/images/website_ss.png" style="object-fit:contain;" width="600px" height="300px"/>
+              {% comment %} <img src="../static/images/website_ss.png" style="object-fit:contain;" width="600px" height="300px"/> {% endcomment %}
+              <div class="d-none d-md-block">
+                <img src="../static/images/website_ss.png" style="object-fit:contain;" width="600px" height="300px"/>
+              </div>
+              <div class="d-block d-md-none">
+                <img src="../static/images/website_ss.png" style="object-fit:contain;" width="400px" height="270px"/>
+              </div>
             </div>
           </div>
         </div>
@@ -70,13 +76,18 @@
           <div class="col-sm">
             <h1 class="display-5">UMBC Syllabus Synthesizer</h1>
             <p class="lead">October 2021-December 2021</p>
-            <p> This is a syllabus builder web-based application aimed to universalize, simplify, and reduce any redundancies in the syllabus creation process. This project was part of my Software Engineering Course (CMSC 447) and developed by Gerson Kroiz, Sam Bailor, Koby Samuel, Eddie Nieberding, and Deep Mistry. This project used Django, Python, HTML, CSS, and Boostrap.</p>
+            <p> This is a syllabus builder web-based application aimed to universalize, simplify, and reduce any redundancies in the syllabus creation process. This project was part of my Software Engineering Course (CMSC 447) and developed by Gerson Kroiz, Sam Bailor, Koby Samuel, Eddie Nieberding, and Deep Mistry. This project used Django, Python, HTML, CSS, and Bootstrap.</p>
             <a class="btn btn-outline-dark" href="https://github.com/gkroiz/syllabus-project" role="button">Source Code</a>
           </br>
           </br>
           </div>
           <div class="col-sm">
-            <iframe width="480px" height="330px" src="https://www.youtube.com/embed/4--0K2Lj3Uc"> </iframe>
+            <div class="d-none d-md-block">
+              <iframe width="600px" height="400px" src="https://www.youtube.com/embed/4--0K2Lj3Uc"> </iframe>
+            </div>
+            <div class="d-block d-md-none">
+              <iframe width="400px" height="270px" src="https://www.youtube.com/embed/4--0K2Lj3Uc"> </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -97,8 +108,14 @@
           </br>
           </div>
           <div class="col-sm">
-            <embed src="../static/pdfs/smc_report.pdf" type="application/pdf" width="600px" height="400px" />
-
+            {% comment %} <embed src="../static/pdfs/smc_report.pdf" type="application/pdf" width="600px" height="400px" /> {% endcomment %}
+            {% comment %} <iframe src="https://drive.google.com/file/d/160B1NO5plpqIcyozjb38XQ4Iji_eYfnF/preview" width="600px" height="400px" allow="autoplay"></iframe> {% endcomment %}
+            <div class="d-none d-md-block">
+              <iframe src="https://drive.google.com/file/d/1qz9l4VUU_m-vKCz0O5mZBhdWVyI4Mt_5/preview" width="600px" height="400px"></iframe>
+            </div>
+            <div class="d-block d-md-none">
+              <iframe src="https://drive.google.com/file/d/1qz9l4VUU_m-vKCz0O5mZBhdWVyI4Mt_5/preview" width="400px" height="400px"></iframe>
+            </div>
           </div>
         </div>
       </div>
