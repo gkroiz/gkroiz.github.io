@@ -36,15 +36,20 @@
           </ul>
         </div>
       </nav>
-<div style="background-image: url('static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat;">
+<div style="background-image: url('static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat; min-height: 100vh;">
 </br>
 </br>
   
   <div class="center">
     <div style="display:table; margin-left:auto; margin-right:auto;"> 
 
-  <embed src="../static/pdfs/Gerson_Kroiz_CV.pdf" type="application/pdf" width="1000px" height="1200px" />
+  {% comment %} <embed src="../static/pdfs/Gerson_Kroiz_CV.pdf" type="application/pdf" width="1000px" height="1100px" /> {% endcomment %}
+  <embed src="../static/pdfs/Gerson_Kroiz_CV.pdf" type="application/pdf" width="850vh" height="1100vh"/>
+    </div>
   </div>
+</br>
+</br>
+</br>
 </br>
 </br>
 {% include footer.html %}

@@ -38,13 +38,13 @@
       </nav>
 
 
-<div style="background-image: url('static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat;">
+<div style="background-image: url('static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat; min-height: 100vh">
   </br>
   </br>
 
-  <div class="container">
+  <div class="container fluid">
     <div class="jumbotron">
-        <div class="container">
+        <div class="container fluid">
           <div class="row">
 
             <div class="col-sm">
@@ -52,6 +52,8 @@
               <p class="lead">December 2021</p>
               <p> I created a basic personal website. The website was developed using HTML, CSS, Bootstrap, and Jekyll hosted via Github.</p>
               <a class="btn btn-outline-dark" href="https://github.com/gkroiz/gersonckroiz.github.io" role="button">Source Code</a>
+            </br>
+            </br>
             </div>
             <div class="col-sm">
               <img src="../static/images/website_ss.png" style="object-fit:contain;" width="600px" height="300px"/>
@@ -61,15 +63,17 @@
     </div>
   </div>
 
-    <div class="container">
+    <div class="container fluid">
     <div class="jumbotron">
-      <div class="container">
+      <div class="container fluid">
         <div class="row">
           <div class="col-sm">
             <h1 class="display-5">UMBC Syllabus Synthesizer</h1>
             <p class="lead">October 2021-December 2021</p>
             <p> This is a syllabus builder web-based application aimed to universalize, simplify, and reduce any redundancies in the syllabus creation process. This project was part of my Software Engineering Course (CMSC 447) and developed by Gerson Kroiz, Sam Bailor, Koby Samuel, Eddie Nieberding, and Deep Mistry. This project used Django, Python, HTML, CSS, and Boostrap.</p>
             <a class="btn btn-outline-dark" href="https://github.com/gkroiz/syllabus-project" role="button">Source Code</a>
+          </br>
+          </br>
           </div>
           <div class="col-sm">
             <iframe width="480px" height="330px" src="https://www.youtube.com/embed/4--0K2Lj3Uc"> </iframe>
@@ -79,9 +83,9 @@
     </div>
     </div>
 
-    <div class="container">
+    <div class="container fluid">
     <div class="jumbotron">
-      <div class="container">
+      <div class="container fluid">
         <div class="row">
 
           <div class="col-sm">
@@ -89,6 +93,8 @@
             <p class="lead">June 2021-August 2021</p>
             <p>Sander Schulhoff, Joshua Anantharaj, Nickolas Drake, and I designed a U-Net deep learning architecture for the data challenge sponsored by General Motors. We declined to present at their conference due to poor results based on industry standard. However, the project was good deep learning practice. This project utilized Python, Pytorch, Slurm, and LaTeX. </p>
             <a class="btn btn-outline-dark" href="https://github.com/trigaten/smc-data-challenge" role="button">Source Code</a>
+          </br>
+          </br>
           </div>
           <div class="col-sm">
             <embed src="../static/pdfs/smc_report.pdf" type="application/pdf" width="600px" height="400px" />
@@ -112,7 +118,9 @@
     </div> {% endcomment %}
 </br>
 </br>
+</br>
+{% include footer.html %}
+
 </div>
 
-  {% include footer.html %}
 </html>
