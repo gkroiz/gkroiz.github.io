@@ -1,4 +1,5 @@
 ---
+active: research
 ---
 <!DOCTYPE html>
 <head>
@@ -26,34 +27,10 @@
     } 
     </style>
     
-    <!-- imports header material-->
-    <div style="background-image: url('../static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat; min-height: 100vh;">
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <span class="navbar-brand mb-1 h1" href="#">Gerson Cheon Kroiz</span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="../research.html">Research <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../projects.html">Selected Projects</a>
-          </li>
-          {% comment %} <li class="nav-item"> {% endcomment %}
-            {% comment %} <a class="nav-link" href="../hobbies.html">Hobbies</a> {% endcomment %}
-          {% comment %} </li> {% endcomment %}
-          <li class="nav-item">
-            <a class="nav-link" href="../cv.html">CV</a>      
-          </li>
-        </ul>
-      </div>
-    </nav>
+<!-- imports header material-->
+
+<div style="background-image: url('../static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat; min-height: 100vh;">
+  {% include navbar.html %}
 
     </br>
 </br>
