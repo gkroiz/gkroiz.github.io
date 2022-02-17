@@ -44,14 +44,14 @@ plugins:
 #   - vendor/ruby/
 
 
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "blog"
-  - scope:
-      path: ""
-    values:
-      image: ""
-      layout: "default"
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       layout: "null"
+#   - scope:
+#       path: ""
+#     values:
+#       image: ""
+#       layout: "null"
