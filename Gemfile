@@ -21,6 +21,7 @@ gem "github-pages", "~> 219", group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "jekyll-pdf-embed"
+  gem "jekyll-sitemap"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -39,7 +40,3 @@ gem "kramdown-parser-gfm"
 
 
 gem "webrick", "~> 1.7"
-
-
-gem "jekyll-seo-tag"
-gem "jekyll-sitemap"
