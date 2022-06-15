@@ -45,14 +45,14 @@ plugins:
 #   - vendor/ruby/
 
 
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "null"
-  - scope:
-      path: ""
-    values:
-      image: ""
-      layout: "null"
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       layout: "null"
+#   - scope:
+#       path: ""
+#     values:
+#       image: ""
+#       layout: "null"
