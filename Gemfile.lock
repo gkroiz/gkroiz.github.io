@@ -264,6 +264,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  commonmarker
   github-pages (~> 219)
   jekyll-feed (~> 0.6)
   jekyll-pdf-embed
