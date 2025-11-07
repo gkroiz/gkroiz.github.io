@@ -2,71 +2,166 @@
 title: Gerson C. Kroiz
 ---
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<html>
+<html lang="en">
 <head>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      font-weight: 300;
+      color: #000000;
+      line-height: 1.6;
+      background-color: #1a1a18;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f5f5f0;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      z-index: -1;
+    }
+
+    .content-section {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      min-height: 100vh;
+      mix-blend-mode: difference;
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 + h2 {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      margin-left: 1.5rem;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: 768px) {
+      .content-section {
+        padding: 3rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+
+  <title>{{ page.title }}</title>
+  {% seo %}
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
   <meta name="google-site-verification" content="P5JvIrpAzGuAYMCBT3_-1TEpWsUUoQAaYK3B6hgaauA" />
 </head>
-  
-<!-- imports header material-->
-  {% include header.html %}
 
-  <div style="background-image: url('static/images/banner.jpeg'); background-size: cover; background-repeat: no-repeat; min-height: 100vh">
-    {% include navbar.html %}
+<body>
+  <div class="content-section">
+    <h1 style="text-align: center;">Gerson C. Kroiz</h1>
 
-  <div class="container">
-  ​<picture>
-    {% comment %} <img src="static/images/GK_Headshot.jpg" class="rounded-circle mx-auto d-block img-fluid"  alt="..." height = "50vh;" alt="Responsive image"> {% endcomment %}
-    {% comment %} <img src="static/images/GK_Headshot.jpg" class="rounded-circle mx-auto d-block img-fluid" alt="..." style="max-width: 50vw;"> {% endcomment %}
-  <div class="d-none d-lg-block">
-    <img src="static/images/GK_Headshot.jpg" class="rounded-circle mx-auto d-block img-fluid" alt="..." style="max-width: 25vw;">
-  </div>
-  <div class="d-none d-md-block d-lg-none">
-    <img src="static/images/GK_Headshot.jpg" class="rounded-circle mx-auto d-block img-fluid" alt="..." style="max-width: 35vw;">
-  </div>
-  <div class="d-md-none">
-    <img src="static/images/GK_Headshot.jpg" class="rounded-circle mx-auto d-block img-fluid" alt="..." style="max-width: 50vw;">
-  </div>
-  </picture>
-  <br>
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-4">About Me</h1>
-      <p class="lead">
-        Hi, I am Gerson Kroiz, and I am a ML/AI software engineer at Google.
-        I work on designing cutting-edge resiliency and optimization strategies for large scale distributed training on TPUs and GPUs.
-        Before Google, I collaborated on multiple research projects at several institutions, including <a href="https://www.ornl.gov">ORNL</a>, <a href="https://www.nist.gov">NIST</a>, <a href="https://www.ipam.ucla.edu">UCLA IPAM</a>, and <a href="https://umbc.edu">UMBC</a>.
-        I also served as CTO for <a href="https://www.mindgrasp.ai">Mindgrasp.ai</a> in 2022. 
-      </p>
-      <p class="lead">
-        My research interests include generative AI, high performance computing, and numerical linear algebra.
-        I hold double Bachelor's degrees in Mathematics and Computer Science from <a href="https://umbc.edu">UMBC</a>.
-        In my spare time, I enjoy traveling, soccer, playing piano, running, biking, skiing, bouldering, and taking pictures.
-      </p>
-      <p class="lead">
-        Feel free to reach out to <a href="mailto:gersonkroiz@gmail.com">gersonkroiz@gmail.com</a> to chat!
-      
-      </p>
-    </div>
-  </div>
-</div>
+    <h2>Now</h2>
+    <p>
+      Senior ML/AI software engineer at Google working on optimizing AI training on TPUs and GPUs.
+    </p>
+    <ul>
+      <li><a href="https://cloud.google.com/blog/products/ai-machine-learning/elastic-training-and-optimized-checkpointing-improve-ml-goodput">Elastic Training and Resiliency on Google Cloud</a></li>
+      <li><a href="https://pytorch.org/blog/distributed-checkpoint-efficient-checkpointing-in-large-scale-jobs/">Efficient Checkpointing in Large Scale Jobs</a></li>
+      <li><a href="https://www.youtube.com/watch?v=VmFcwjpt8vE">Talk at PyTorch 2025</a></li>
+    </ul>
+    <!-- <p>
+      Mechanistic Interpretability Enthusiast (<a href="https://www.matsprogram.org/" target="_blank" rel="noopener">MATS 9.0 Scholar</a>)
+    </p> -->
 
-</br>
-</br>
-</br>
-{% include footer.html %}
-</div>
+    <h2>Prev</h2>
+    <p>
+      CTO of <a href="https://mindgrasp.ai" target="_blank" rel="noopener">mindgrasp.ai</a>
+    </p>
+    <p>
+      Research at ORNL, UCLA, NIST, and UMBC
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:gersonkroiz@gmail.com">Email</a> /
+      <a href="https://www.linkedin.com/in/gkroiz/">LinkedIn</a> /
+      <a href="https://github.com/gkroiz">GitHub</a> /
+      <a href="static/pdfs/Gerson_Kroiz_CV.pdf" download>CV</a>
+    </p>
+
+    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0.25rem;">
+      Typeface: <a href="https://en.wikipedia.org/wiki/Helvetica_(film)">helvetica</a>
+    </p>
+    <p style="font-size: 0.9rem; opacity: 0.7;">
+      Inspo: <a href="https://www.artsy.net/artwork/fan-ho-approaching-shadow-hong-kong-1955">approaching shadow</a>
+    </p>
+  </div>
+</body>
 </html>
