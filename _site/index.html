@@ -25,6 +25,8 @@
       color: #000000;
       line-height: 1.6;
       background-color: #f5f5f0;
+      min-height: 100vh;
+      background-attachment: fixed;
     }
 
     .content-section {
@@ -173,7 +175,7 @@
       }
       var c1 = jitter(), c2 = jitter(), c3 = jitter();
       var angle = Math.floor(Math.random() * 360);
-      document.body.style.background = 'linear-gradient(' + angle + 'deg, ' +
+      document.body.style.backgroundImage = 'linear-gradient(' + angle + 'deg, ' +
         'rgb(' + c1.join(',') + ') 0%, ' +
         'rgb(' + c2.join(',') + ') 50%, ' +
         'rgb(' + c3.join(',') + ') 100%)';
